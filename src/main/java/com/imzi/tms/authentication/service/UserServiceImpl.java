@@ -4,7 +4,6 @@ import com.imzi.tms.authentication.dao.RoleDao;
 import com.imzi.tms.authentication.dao.UserDao;
 import com.imzi.tms.authentication.model.Role;
 import com.imzi.tms.authentication.model.User;
-import lombok.AllArgsConstructor;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
