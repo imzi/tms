@@ -28,7 +28,7 @@ public class UserServiceImpl implements UserService{
     public void addRoleToUser(String username, String roleName) {
         User user = userDao.findByUsername(username);
         Role role = roleDao.findByName(roleName);
-        user.getRoles().add(roleName);
+        user.getRoles().add(role);
     }
 
     @Override

@@ -24,5 +24,10 @@ public class User {
     private String username;
     private String password;
     @ManyToMany(fetch = FetchType.EAGER)
-    private Collection<String> roles = new ArrayList<>();
+    @JoinTable(
+            name = "user_role",
+            joinColumns = @JoinColumn(name = "user_id"),
+            inverseJoinColumns = @JoinColumn(name = "role_id")
+    )
+    private Collection<Role> roles = new ArrayList<>();
 }

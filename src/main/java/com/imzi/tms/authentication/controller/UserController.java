@@ -1,7 +1,6 @@
 package com.imzi.tms.authentication.controller;
 
 import com.imzi.tms.authentication.dao.UserDao;
-import com.imzi.tms.authentication.model.Role;
 import com.imzi.tms.authentication.model.User;
 
 import lombok.RequiredArgsConstructor;
